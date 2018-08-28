@@ -9,13 +9,21 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
 import { MyDashboardComponent } from './my-dashboard/my-dashboard.component';
 import { MyTableComponent } from './my-table/my-table.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { NewAgreementsComponent } from './cards/new-agreements/new-agreements.component';
+import { TopStoresComponent } from './cards/top-stores/top-stores.component';
+import { NewCustomersComponent } from './cards/new-customers/new-customers.component';
+import { DefaultSettingsComponent } from './settings/default-settings/default-settings.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyNavComponent,
     MyDashboardComponent,
-    MyTableComponent
+    MyTableComponent,
+    NewAgreementsComponent,
+    TopStoresComponent,
+    NewCustomersComponent,
+    DefaultSettingsComponent
   ],
   imports: [
     BrowserModule,

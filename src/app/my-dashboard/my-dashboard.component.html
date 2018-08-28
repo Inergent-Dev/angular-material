@@ -15,7 +15,9 @@
           </mat-card-title>
         </mat-card-header>
         <mat-card-content class="dashboard-card-content">
-          <div>{{ card.content }}</div>
+          <div *ngIf="card.type === 'customers'"><app-new-customers></app-new-customers></div>
+          <div *ngIf="card.type === 'agreements'"><app-new-agreements></app-new-agreements></div>
+          <div *ngIf="card.type === 'stores'"><app-top-stores></app-top-stores></div>
         </mat-card-content>
       </mat-card>
     </mat-grid-tile>

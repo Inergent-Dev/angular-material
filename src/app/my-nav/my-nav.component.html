@@ -10,7 +10,7 @@
     <mat-nav-list>
       <a mat-list-item routerLink="/dashboard" routerLinkActive="active"><mat-icon style="padding-right: .3em">dashboard</mat-icon>Dashboard</a>
       <a mat-list-item routerLink="/reports" routerLinkActive="active"><mat-icon style="padding-right: .3em">insert_chart</mat-icon>Reports</a>
-      <a mat-list-item routerLink="/upload" routerLinkActive="active"><mat-icon style="padding-right: .3em">cloud_upload</mat-icon>Upload</a>
+      <a mat-list-item routerLink="/settings" routerLinkActive="active"><mat-icon style="padding-right: .3em">settings</mat-icon>Settings</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -24,7 +24,9 @@
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <img src="../../assets/images/racLogo.png" style="height: 4em; padding-right: .4em; margin-top: 10px">
-      <span>Serverless MicroUI - Reference Architecture</span>
+      <div>
+        <span style="font-size: 1.2em">Serverless MicroUI</span><span class="content-desktop-only" style="font-size: 1.2em">&nbsp;- Reference Architecture</span>
+      </div>
     </mat-toolbar>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
